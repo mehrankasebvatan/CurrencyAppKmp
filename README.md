@@ -1,14 +1,79 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Compose Multiplatform Project
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+This repository contains a **Kotlin Multiplatform Project (KMP)** developed as part of the [Compose Multiplatform iOS & Android Development with Kotlin](https://www.udemy.com/course/compose-multiplatform-iosandroid-development-with-kotlin/) course on Udemy. The project showcases the capabilities of Kotlin Multiplatform to create native applications for **Android** and **iOS** using shared business logic and a single codebase for UI with Jetpack Compose.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+---
 
+## Features
+- **Shared Codebase**: The project uses Kotlin Multiplatform for shared business logic.
+- **Jetpack Compose UI**: Compose Multiplatform for shared UI components across Android and iOS.
+- **Platform-Specific Integrations**: Custom implementations for platform-specific requirements.
+- **Dependency Injection**: Utilizes Koin for dependency injection.
+- **Modern Development Practices**: Includes coroutines for asynchronous programming and Compose navigation for routing.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+---
+
+## Technologies Used
+### Core Frameworks and Libraries
+- **Kotlin Multiplatform (KMP)**: Enables writing shared logic for multiple platforms.
+- **Jetpack Compose Multiplatform**: Allows shared UI development across Android and iOS.
+- **Koin**: Lightweight dependency injection library.
+- **Coroutines**: For asynchronous programming.
+
+### Build Tools
+- **Gradle**: Multi-platform project configuration and dependency management.
+
+### Testing
+- **Kotlin Test**: For unit tests.
+
+---
+
+## Getting Started
+
+### Prerequisites
+- **Android Studio**: Latest version with KMP plugin installed.
+- **Xcode**: To build and run the iOS application.
+- **Kotlin Multiplatform Plugin**: Installed in your IDE.
+
+### Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mehrankasebvatan/CurrencyAppKmp.git
+   ```
+2. Open the project in Android Studio.
+3. Sync the Gradle files.
+4. Run the Android app or configure the iOS build via Xcode.
+
+---
+
+## Project Structure
+- `commonMain/`: Contains shared business logic and Compose UI components.
+- `androidMain/`: Android-specific implementation.
+- `iosMain/`: iOS-specific implementation.
+
+---
+
+## Screenshots
+| Main Page | Currency Dialog |
+|-----------------|-------------|
+| ![Main Page](https://github.com/mehrankasebvatan/CurrencyAppKmp/blob/main/screenshots/image1.png) | ![Main Dialog](https://github.com/mehrankasebvatan/CurrencyAppKmp/blob/main/screenshots/image2.png) |
+
+---
+
+## Resources
+- [Compose Multiplatform iOS & Android Development with Kotlin](https://www.udemy.com/course/compose-multiplatform-iosandroid-development-with-kotlin/)
+
+---
+
+## License
+This project is licensed under the MIT License. Feel free to use and adapt the code for your own projects.
+
+---
+
+## Contributing
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+---
+
+## Contact
+For any questions, feel free to reach out via email at [contact@kasebvatan.ir].
